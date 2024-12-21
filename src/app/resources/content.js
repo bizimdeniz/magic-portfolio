@@ -1,15 +1,15 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Selene',
-    lastName:  'Yu',
+    firstName: 'Harun',
+    lastName:  'Geckaldi',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Design Engineer',
-    avatar:    '/images/avatar.jpg',
-    location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    role:      'Software Developer ',
+    avatar:    '/images/avatar.png',
+    location:  'Europe/London',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    languages: ['English', 'Turkish']  // optional: Leave the array empty if you don't want to display languages
 }
 
 const newsletter = {
@@ -24,22 +24,22 @@ const social = [
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
+        link: 'https://github.com/bizimdeniz',
     },
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
+        link: 'https://www.linkedin.com/in/harungeckaldi/',
     },
     {
         name: 'X',
         icon: 'x',
-        link: '',
+        link: 'https://x.com/bizimdeniz_',
     },
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'mailto:hello@denizco.de',
     },
 ]
 
@@ -47,8 +47,8 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    headline: <>Software Developer and hardworker</>,
+    subline: <>I'm Harun, a Software Developer at <InlineCode>Metadata Solutions</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
 }
 
 const about = {
@@ -64,7 +64,7 @@ const about = {
     },
     calendar: {
         display: true,
-        link: 'https://cal.com'
+        link: 'https://cal.com/bizimdeniz'
     },
     intro: {
         display: true,
@@ -76,32 +76,57 @@ const about = {
         title: 'Work Experience',
         experiences: [
             {
-                company: 'FLY',
-                timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                company: 'Amazon',
+                timeframe: '2024 - Present',
+                role: 'Fulfilment Associate',
                 achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    <>BHX4 at Amazon</>,
+                    
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
-                        src: '/images/projects/project-01/cover-01.jpg',
-                        alt: 'Once UI Project',
+                        src: '/images/projects/project-01/amazon.jpg',
+                        alt: 'Amazon',
                         width: 16,
                         height: 9
                     }
                 ]
             },
             {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
+                company: 'Delta Hotels by Marriott',
+                timeframe: '2022 - Present',
+                role: 'Receptionst',
                 achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                    <>Night Supervisor</>,
+                    
                 ],
-                images: [ ]
-            }
+                images: [ // optional: leave the array empty if you don't want to display images
+                    {
+                        src: '/images/projects/project-01/hotel.jpg',
+                        alt: 'Hotel',
+                        width: 16,
+                        height: 9
+                    }
+                ]
+            },
+            {
+                company: 'Metadata Solutinos',
+                timeframe: '2020 - Present',
+                role: 'Support Associate',
+                achievements: [
+                    <>I help as a freelancer in design and coding works for Metadata Solutions company.</>
+                    
+                ],
+                images: [ // optional: leave the array empty if you don't want to display images
+                    {
+                        src: '/images/projects/project-01/metadatas.jpg',
+                        alt: 'Once UI Project',
+                        width: 16,
+                        height: 9
+                    }
+                ]
+            },
+           
         ]
     },
     studies: {
@@ -109,12 +134,12 @@ const about = {
         title: 'Studies',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
+                name: 'University of Anadolu',
+                description: <>Faculty of Business Administration.</>,
             },
             {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                name: 'University of Suleyman Demirel',
+                description: <>Marketing and Advertising.</>,
             }
         ]
     },
