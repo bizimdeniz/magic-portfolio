@@ -27,7 +27,7 @@ export const Footer = () => {
                         © {currentYear} /
                     </Text>
                     <Text paddingX="4">
-                        {person.name}
+                        bizimdeniz
                     </Text>
                     
                 </Text>
