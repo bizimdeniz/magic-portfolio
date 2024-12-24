@@ -6,7 +6,7 @@ const person = {
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Software Developer ',
+    role:      'Front-end Developer ',
     avatar:    '/images/avatar.jpg',
     location:  'Europe/London',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
     languages: ['English', 'Turkish']  // optional: Leave the array empty if you don't want to display languages
@@ -48,7 +48,7 @@ const home = {
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
     headline: <>Software Developer</>,
-    subline: <>I'm Harun, a Fulfilment Associate at <InlineCode>Amazon</InlineCode>, and I'm a freelancer Software Developer at<InlineCode>Metadata Solutions</InlineCode><br/>  I like to play games and follow technology outside of working hours.</>
+    subline: <>I'm Harun, a Fulfilment Associate at <InlineCode>Amazon</InlineCode>, and I'm a freelancer Front-end Developer at<InlineCode>Metadata Solutions</InlineCode><br/>  I like to play games and follow technology outside of working hours.</>
 }
 
 const about = {
@@ -69,7 +69,7 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Harun is a Coventry-based software developer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>Harun is a Coventry-based Front-end Developer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
     },
     work: {
         display: true, // set to false to hide this section
