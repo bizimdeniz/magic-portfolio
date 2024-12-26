@@ -1,4 +1,4 @@
-import { InlineCode } from "@/once-ui/components";
+import { Background, InlineCode } from "@/once-ui/components";
 
 const person = {
     firstName: 'Harun',
@@ -166,7 +166,7 @@ const about = {
                         height: 5
                     },
                     {
-                        src: '/images/logo/js.png',
+                        src: '/images/logo/vue.png',
                         alt: 'Project image',
                         width: 5,
                         height: 5
@@ -178,10 +178,17 @@ const about = {
                         height: 5
                     },
                     {
+                        src: '/images/logo/npm.png',
+                        alt: 'Project image',
+                        width: 5,
+                        height: 5
+                    },
+                    {
                         src: '/images/logo/react.png',
                         alt: 'Project image',
                         width: 5,
                         height: 5
+                        
                     },
                     {
                         src: '/images/logo/wordpress.png',
