@@ -149,22 +149,47 @@ const about = {
         title: 'Technical skills',
         skills: [
             {
-                title: 'Figma',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+                title: 'Technologies',
+                description: <>Technologies in my use</>,
                 // optional: leave the array empty if you don't want to display images
                 images: [
                     {
-                        src: '/images/projects/project-01/cover-02.jpg',
+                        src: '/images/logo/html5.png',
                         alt: 'Project image',
-                        width: 16,
-                        height: 9
+                        width: 5,
+                        height: 5
                     },
                     {
-                        src: '/images/projects/project-01/cover-03.jpg',
+                        src: '/images/logo/css3.png',
                         alt: 'Project image',
-                        width: 16,
-                        height: 9
+                        width: 5,
+                        height: 5
                     },
+                    {
+                        src: '/images/logo/js.png',
+                        alt: 'Project image',
+                        width: 5,
+                        height: 5
+                    },
+                    {
+                        src: '/images/logo/node.png',
+                        alt: 'Project image',
+                        width: 5,
+                        height: 5
+                    },
+                    {
+                        src: '/images/logo/react.png',
+                        alt: 'Project image',
+                        width: 5,
+                        height: 5
+                    },
+                    {
+                        src: '/images/logo/wordpress.png',
+                        alt: 'Project image',
+                        width: 5,
+                        height: 5
+                    },
+                    
                 ]
             },
             {
