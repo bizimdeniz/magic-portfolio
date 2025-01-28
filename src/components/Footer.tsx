@@ -2,9 +2,8 @@ import { renderContent } from "@/app/resources";
 import { Flex, IconButton, SmartLink, Text } from "@/once-ui/components"
 import { useTranslations } from "next-intl";
 import styles from './Footer.module.scss'
-import { Analytics } from "@vercel/analytics/react";
 
-<Analytics/>
+
 
 export const Footer = () => {
     const currentYear = new Date().getFullYear();
