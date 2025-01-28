@@ -2,7 +2,6 @@
 
 import { useParams } from "next/navigation";
 import { useEffect, useState, useTransition } from "react";
-import { Analytics } from "@vercel/analytics/react";
 
 import { Flex, ToggleButton } from "@/once-ui/components"
 import styles from '@/components/Header.module.scss'
@@ -49,7 +48,7 @@ const TimeDisplay: React.FC<TimeDisplayProps> = ({ timeZone, locale = 'en-GB' })
         </>
     );
 };
-<Analytics/>
+
 export default TimeDisplay;
 
 export const Header = () => {
