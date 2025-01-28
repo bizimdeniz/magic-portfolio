@@ -14,6 +14,7 @@ import { getMessages, getTranslations, unstable_setRequestLocale } from 'next-in
 
 import { routing } from "@/i18n/routing";
 import { renderContent } from "@/app/resources";
+import { Analytics } from "@vercel/analytics/react";
 import { Background, Flex } from "@/once-ui/components";
 
 export async function generateMetadata(
@@ -109,6 +110,7 @@ export default async function RootLayout({
 					as="body"
 					fillWidth margin="0" padding="0"
 					direction="column">
+					<Analytics/>
 					<Background
 						mask={effects.mask as any}
 						gradient={effects.gradient as any}
