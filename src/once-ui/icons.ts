@@ -35,6 +35,9 @@ import {
 	FaLinkedin,
 	FaXTwitter
 } from "react-icons/fa6";
+import {
+	RiKickLine
+} from "react-icons/ri";
 
 export const iconLibrary: Record<string, IconType> = {
 	chevronUp: HiChevronUp,
@@ -63,5 +66,6 @@ export const iconLibrary: Record<string, IconType> = {
 	github: FaGithub,
 	linkedin: FaLinkedin,
 	x: FaXTwitter,
-	clipboard: HiClipboard
+	clipboard: HiClipboard,
+	kick: RiKickLine 
 };
