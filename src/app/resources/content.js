@@ -95,7 +95,7 @@ const about = {
             },
             {
                 company: 'Delta Hotels by Marriott',
-                timeframe: '2022 - Present',
+                timeframe: '2022 - 03.2025',
                 role: 'Receptionst',
                 achievements: [
                     <>Night Supervisor</>,
