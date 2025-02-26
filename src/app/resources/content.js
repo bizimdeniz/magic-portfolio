@@ -94,23 +94,6 @@ const about = {
                 ]
             },
             {
-                company: 'Delta Hotels by Marriott',
-                timeframe: '2022 - 03.2025',
-                role: 'Receptionst',
-                achievements: [
-                    <>Night Supervisor</>,
-                    
-                ],
-                images: [ // optional: leave the array empty if you don't want to display images
-                    {
-                        src: '/images/projects/project-01/hotel.jpg',
-                        alt: 'Hotel',
-                        width: 16,
-                        height: 9
-                    }
-                ]
-            },
-            {
                 company: 'Metadata Solutinos',
                 timeframe: '2020 - Present',
                 role: 'Support Associate',
@@ -127,6 +110,24 @@ const about = {
                     }
                 ]
             },
+            {
+                company: 'Delta Hotels by Marriott',
+                timeframe: '2022 - 03.2025',
+                role: 'Receptionst',
+                achievements: [
+                    <>Night Supervisor</>,
+                    
+                ],
+                images: [ // optional: leave the array empty if you don't want to display images
+                    {
+                        src: '/images/projects/project-01/hotel.jpg',
+                        alt: 'Hotel',
+                        width: 16,
+                        height: 9
+                    }
+                ]
+            },
+
            
         ]
     },
