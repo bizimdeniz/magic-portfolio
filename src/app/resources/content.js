@@ -37,6 +37,11 @@ const social = [
         link: 'https://x.com/bizimdeniz_',
     },
     {
+        name: 'Kick',
+        icon: 'kick',
+        link: 'https://kick.com/bizimdeniz',
+    },
+    {
         name: 'Email',
         icon: 'email',
         link: 'mailto:hello@denizco.de',
