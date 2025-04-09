@@ -39,7 +39,7 @@ const social = [
     {
         name: 'Kick',
         icon: 'kick',
-        link: 'https://kick.com/bizimdeniz',
+        link: 'https://kick.com/sunMaJesty',
     },
     {
         name: 'Email',
