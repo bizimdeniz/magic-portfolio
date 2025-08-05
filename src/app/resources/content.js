@@ -42,6 +42,11 @@ const social = [
         link: 'https://kick.com/sunMaJesty',
     },
     {
+        name: 'Bio',
+        icon: 'info',
+        link: 'https://bio.denizco.de',
+    },
+    {
         name: 'Email',
         icon: 'email',
         link: 'mailto:hello@denizco.de',

@@ -18,6 +18,7 @@ import {
 	HiMiniGlobeAsiaAustralia,
 	HiEnvelope,
 	HiCalendarDays,
+	HiOutlineInformationCircle,
 	HiClipboard
 } from "react-icons/hi2";
 
@@ -67,5 +68,6 @@ export const iconLibrary: Record<string, IconType> = {
 	linkedin: FaLinkedin,
 	x: FaXTwitter,
 	clipboard: HiClipboard,
+	info:HiOutlineInformationCircle,
 	kick: RiKickLine 
 };
