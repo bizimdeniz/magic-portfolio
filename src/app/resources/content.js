@@ -43,7 +43,7 @@ const social = [
     },
     {
         name: 'Bio',
-        icon: 'info',
+        icon: 'bio',
         link: 'https://bio.denizco.de',
     },
     {

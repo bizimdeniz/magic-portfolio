@@ -34,7 +34,8 @@ import {
 	FaDiscord,
 	FaGithub,
 	FaLinkedin,
-	FaXTwitter
+	FaXTwitter,
+	FaExplosion 
 } from "react-icons/fa6";
 import {
 	RiKickLine
@@ -69,5 +70,6 @@ export const iconLibrary: Record<string, IconType> = {
 	x: FaXTwitter,
 	clipboard: HiClipboard,
 	info:HiOutlineInformationCircle,
+	bio:FaExplosion,
 	kick: RiKickLine 
 };
