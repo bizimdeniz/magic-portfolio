@@ -128,7 +128,11 @@ const about = {
                 timeframe: '2020 - Present',
                 role: 'Support Associate',
                 achievements: [
-                    <>I help as a freelancer in design and coding works for Metadata Solutions company.</>
+                    <>I help as a freelancer in design and coding works for Metadata Solutions company.
+                    <a href="https://www.metadatasolutions.co.uk" target="_blank" rel="noopener noreferrer"> 
+                    Visit Metadata Solutinos
+                    </a>
+                    </>
                     
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
