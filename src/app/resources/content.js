@@ -87,6 +87,24 @@ const about = {
         title: 'Work Experience',
         experiences: [
             {
+                company: 'GlowyJoy',
+                timeframe: '2025 - Present',
+                role: 'Owner',
+                achievements: [
+                    <>We sell a variety of beautiful jewellery products in the GlowyJoy Etsy store.
+                    <a href="https://www.etsy.com/shop/GlowyJoy" target="_blank" rel="noopener noreferrer">Visit our Etsy shop</a></>,
+                    
+                ],
+                images: [ // optional: leave the array empty if you don't want to display images
+                    {
+                        src: '/images/projects/project-01/glow.png',
+                        alt: 'GlowyJoy',
+                        width: 16,
+                        height: 9
+                    }
+                ]
+            },
+            {
                 company: 'Amazon',
                 timeframe: '2024 - Present',
                 role: 'Fulfilment Associate',
