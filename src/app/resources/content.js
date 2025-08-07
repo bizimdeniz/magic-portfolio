@@ -89,9 +89,9 @@ const about = {
             {
                 company: 'GlowyJoy',
                 timeframe: '2025 - Present',
-                role: 'Owner',
+                role: 'Co-founder',
                 achievements: [
-                    <>We sell a variety of beautiful jewellery products in the GlowyJoy Etsy store.
+                    <>We sell a variety of beautiful jewellery products in the GlowyJoy Etsy store.<br />
                     <a href="https://www.etsy.com/shop/GlowyJoy" target="_blank" rel="noopener noreferrer"> 
                     Visit our Etsy shop
                     </a></>,
@@ -128,7 +128,7 @@ const about = {
                 timeframe: '2020 - Present',
                 role: 'Support Associate',
                 achievements: [
-                    <>I help as a freelancer in design and coding works for Metadata Solutions company.
+                    <>I help as a freelancer in design and coding works for Metadata Solutions company.<br />
                     <a href="https://www.metadatasolutions.co.uk" target="_blank" rel="noopener noreferrer"> 
                     Visit Metadata Solutinos
                     </a>
