@@ -92,7 +92,9 @@ const about = {
                 role: 'Owner',
                 achievements: [
                     <>We sell a variety of beautiful jewellery products in the GlowyJoy Etsy store.
-                    <a href="https://www.etsy.com/shop/GlowyJoy" target="_blank" rel="noopener noreferrer">Visit our Etsy shop</a></>,
+                    <a href="https://www.etsy.com/shop/GlowyJoy" target="_blank" rel="noopener noreferrer"> 
+                    Visit our Etsy shop
+                    </a></>,
                     
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
