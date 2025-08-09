@@ -13,14 +13,14 @@ import { Locale, usePathname, useRouter } from '@/i18n/routing';
 import { renderContent } from "@/app/resources";
 import { useTranslations } from "next-intl";
 import { i18n } from "@/app/resources/config";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+
 
 type TimeDisplayProps = {
     timeZone: string;
     locale?: string;  // Optionally allow locale, defaulting to 'en-GB'
 };
 
-<SpeedInsights/>
+
 
 const TimeDisplay: React.FC<TimeDisplayProps> = ({ timeZone, locale = 'en-GB' }) => {
     const [currentTime, setCurrentTime] = useState('');
