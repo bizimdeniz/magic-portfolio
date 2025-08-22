@@ -1,4 +1,4 @@
-const baseURL = 'denizco.vercel.app'
+const baseURL = 'denizco.de'
 
 // Enable localization
 const i18n = false;
