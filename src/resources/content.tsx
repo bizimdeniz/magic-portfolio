@@ -1,4 +1,4 @@
-import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work, Quiz } from "@/types";
+import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
 
@@ -321,14 +321,7 @@ const work: Work = {
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
 };
-const quiz: Quiz = {
-  path: "/quiz",
-  label: "Quiz",
-  title: `Quiz – ${person.name}`,
-  description: `Design and create projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
-};
+
 
 const gallery: Gallery = {
   path: "/gallery",
