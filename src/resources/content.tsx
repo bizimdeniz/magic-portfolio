@@ -375,4 +375,4 @@ const gallery: Gallery = {
 };
 
 // include quiz in the main export and remove the duplicate export below
-export { person, social, newsletter, home, about, blog, work, gallery, quiz };
+export { person, social, newsletter, home, about, blog, work, gallery };
