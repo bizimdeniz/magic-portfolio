@@ -7,7 +7,7 @@ const person: Person = {
   firstName: "Harun",
   lastName: "Geckaldi",
   name: "Harun Geckaldi",
-  role: "...",
+  role: "Front-end Developer",
   avatar: '/images/avatar.jpg',
   location: 'Europe/London',
   languages: ['English', 'Turkish'],
