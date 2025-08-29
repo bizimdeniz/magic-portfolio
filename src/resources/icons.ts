@@ -40,7 +40,7 @@ import {
 } from "react-icons/fa6";
 
 import { FaDiscord, FaGithub, FaLinkedin, FaX, FaThreads } from "react-icons/fa6";
-import { quiz } from ".";
+
 
 export const iconLibrary: Record<string, IconType> = {
   arrowUpRight: HiArrowUpRight,

@@ -6,16 +6,17 @@ import { Line, Logo, Row, Text } from "@once-ui-system/core";
 const person: Person = {
   firstName: "Harun",
   lastName: "Geckaldi",
-  name: `Harun Geckaldi`,
-  role:      'Front-end Developer ',
-    avatar:    '/images/avatar.jpg',
-    location:  'Europe/London',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Turkish']  // optional: Leave the array empty if you don't want to display languages
+  name: "Harun Geckaldi",
+  role: "...",
+  avatar: '/images/avatar.jpg',
+  location: 'Europe/London',
+  languages: ['English', 'Turkish'],
+  email: "hello@denizco.de"
 };
 
 const newsletter: Newsletter = {
   display: true,
-    title: <>Subscribe to {person.firstName}'s Newsletter</>,
+    title: <>Subscribe to {person.firstName}&apos;s Newsletter</>,
     description: <>I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.</>,
 };
 
@@ -76,7 +77,7 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm Harun, a fulfilment associate at {" "}
+      I&apos;m Harun, a fulfilment associate at {" "}
       <Logo
         dark
         icon="/trademarks/Amazon_logo.svg"
