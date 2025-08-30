@@ -1,4 +1,5 @@
-import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
+import type { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
+
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
 
@@ -17,7 +18,8 @@ const person: Person = {
 const newsletter: Newsletter = {
   display: true,
     title: <>Subscribe to {person.firstName}&apos;s Newsletter</>,
-    description: <>I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.</>,
+    description: <>I occasionally write about web development, technology trends, and my experiences at the intersection of creativity and engineering.</>
+
 };
 
 const social: Social = [
@@ -116,7 +118,7 @@ const about: About = {
     description: (
       <>
         Harun is a Coventry-based Front-end Developer with a passion for transforming complex challenges into simple, 
-        elegant design solutions. Her work spans digital interfaces, interactive experiences, 
+        elegant design solutions. His work spans digital interfaces, interactive experiences, 
         and the convergence of design and technology.
       </>
     ),
@@ -163,13 +165,13 @@ const about: About = {
                 ]
             },
             {
-                company: 'Metadata Solutinos',
+                company: 'Metadata Solutions',
                 timeframe: '2020 - Present',
                 role: 'Support Associate',
                 achievements: [
                     <>I help as a freelancer in design and coding works for Metadata Solutions company.<br />
                     <a href="https://www.metadatasolutions.co.uk" target="_blank" rel="noopener noreferrer"> 
-                    Visit Metadata Solutinos
+                    Visit Metadata Solutions
                     </a>
                     </>
                     
@@ -186,7 +188,7 @@ const about: About = {
             {
                 company: 'Delta Hotels by Marriott',
                 timeframe: '2022 - 03.2025',
-                role: 'Receptionst',
+                role: 'Receptionist',
                 achievements: [
                     <>Night Supervisor</>,
                     
