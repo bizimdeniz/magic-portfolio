@@ -20,7 +20,7 @@ export async function generateMetadata() {
   return Meta.generate({
     title: home.title,
     description: home.description,
-    baseURL: baseURL,
+    baseURL: "https://denizco.de",
     path: home.path,
     image: home.image,
   });
@@ -35,7 +35,7 @@ export default function Home() {
         path={home.path}
         title={home.title}
         description={home.description}
-        image={`https://${baseURL}/images/og/home.jpg`}
+        image={`/api/og/generate?title=${encodeURIComponent(home.title)}`}
         author={{
           name: person.name,
           url: `${baseURL}${about.path}`,
