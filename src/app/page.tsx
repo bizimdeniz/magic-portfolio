@@ -20,7 +20,7 @@ export async function generateMetadata() {
   return Meta.generate({
     title: home.title,
     description: home.description,
-    baseURL: "https://denizco.de",
+    baseURL: baseURL,
     path: home.path,
     image: home.image,
   });
