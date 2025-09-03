@@ -8,12 +8,13 @@ import {
   RoutesConfig,
   SameAsConfig,
   SchemaConfig,
+  SocialSharingConfig,
   StyleConfig,
 } from "@/types";
 import { home } from "./index";
 
 // IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
-const baseURL: string = "https://denizco.de";
+const baseURL: string = "https://demo.magic-portfolio.com";
 
 const routes: RoutesConfig = {
   "/": true,
@@ -21,7 +22,6 @@ const routes: RoutesConfig = {
   "/work": true,
   "/blog": true,
   "/gallery": true,
-  "/quiz": false, // <-- "deneme" yerine "quiz"
 };
 
 const display: DisplayConfig = {
@@ -188,9 +188,9 @@ const mailchimp: MailchimpConfig = {
 const schema: SchemaConfig = {
   logo: "",
   type: "Organization",
-  name: "denizco",
+  name: "Once UI",
   description: home.description,
-  email: "hello@denizco.de",
+  email: "lorant@once-ui.com",
 };
 
 // social links
@@ -198,6 +198,22 @@ const sameAs: SameAsConfig = {
   threads: "https://www.threads.com/@once_ui",
   linkedin: "https://www.linkedin.com/company/once-ui/",
   discord: "https://discord.com/invite/5EyAQ4eNdS",
+};
+
+// social sharing configuration for blog posts
+const socialSharing: SocialSharingConfig = {
+  display: true,
+  platforms: {
+    x: true,
+    linkedin: true,
+    facebook: false,
+    pinterest: false,
+    whatsapp: false,
+    reddit: false,
+    telegram: false,
+    email: true,
+    copyLink: true,
+  },
 };
 
 export {
@@ -210,6 +226,7 @@ export {
   style,
   schema,
   sameAs,
+  socialSharing,
   effects,
   dataStyle,
 };
