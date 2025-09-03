@@ -23,8 +23,7 @@ const newsletter: Newsletter = {
 };
 
 const social: Social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
+
 {
         name: 'GitHub',
         icon: 'github',
@@ -43,7 +42,7 @@ const social: Social = [
     {
         name: 'Kick',
         icon: 'kick',
-        link: 'https://kick.com/sunMaJesty',
+        link: 'https://kick.com/bizimdeniz',
     },
     {
         name: 'Bio',
