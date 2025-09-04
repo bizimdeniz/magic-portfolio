@@ -1,0 +1,58 @@
+---
+title: "Actual Budget Update"
+summary: "Magic Portfolio is a comprehensive, MDX-based, SEO-friendly, responsive portfolio template built with Once UI and Next.js."
+image: "/images/projects/blog/actual-main-budget-dark.jpg"
+publishedAt: "2025-08-204"
+tag: "Raspberry Pi"
+---
+
+
+## About
+
+Actual Budget is a super fast and privacy-focused app for managing your finances. At its heart is the well proven and much loved Envelope Budgeting methodology.
+You own your data and can do whatever you want with it. Featuring multi-device sync, optional end-to-end encryption and so much more.
+
+## Quick Update
+
+Update Actual Budget for Raspberry Pi
+
+<CodeBlock
+    marginBottom="16"
+    codes={[
+  {
+    code:
+`docker stop actualbudget
+docker rm actualbudget`, 
+    language: "tsx",
+    label: "Stop and delete the current container"
+  }
+]} />
+<CodeBlock
+    marginBottom="16"
+    codes={[
+  {
+    code:
+`docker pull actualbudget/actual-server:latest`, 
+    language: "tsx",
+    label: "Take a new image:"
+  }
+]} />
+
+
+<CodeBlock
+    marginBottom="16"
+    codes={[
+  {
+    code:
+`docker run -d \
+  --name actualbudget \
+  -p 5006:5006 \
+  -v /home/pi/actual-data:/data \
+  actualbudget/actual-server:latest
+`, 
+    language: "tsx",
+    label: "Restart using the same volume:"
+  }
+]} />
+
+
