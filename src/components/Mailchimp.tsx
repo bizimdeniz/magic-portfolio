@@ -3,7 +3,7 @@
 import { mailchimp, newsletter } from "@/resources";
 import { Button, Heading, Input, Text, Background, Column, Row } from "@once-ui-system/core";
 import { opacity, SpacingToken } from "@once-ui-system/core";
-import { useState } from "react";
+import { useState, useCallback } from "react";
 
 function debounce<T extends (...args: any[]) => void>(func: T, delay: number): T {
   let timeout: ReturnType<typeof setTimeout>;
@@ -17,6 +17,8 @@ export const Mailchimp: React.FC<React.ComponentProps<typeof Column>> = ({ ...fl
   const [email, setEmail] = useState<string>("");
   const [error, setError] = useState<string>("");
   const [touched, setTouched] = useState<boolean>(false);
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
+  const [successMessage, setSuccessMessage] = useState<string>("");
 
   const validateEmail = (email: string): boolean => {
     if (email === "") {
@@ -27,7 +29,52 @@ export const Mailchimp: React.FC<React.ComponentProps<typeof Column>> = ({ ...fl
     return emailPattern.test(email);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!validateEmail(email)) {
+      setError("Please enter a valid email address.");
+      return;
+    }
+    
+    setIsSubmitting(true);
+    setSuccessMessage("");
+    
+    try {
+      // Mailchimp form action URL'sini al
+      const formAction = mailchimp.action;
+      
+      // Form verilerini hazırla
+      const formData = new FormData();
+      formData.append('EMAIL', email);
+      formData.append('b_c1a5a210340eb6c7bff33b2ba_0462d244aa', '');
+      
+      // Mailchimp'ye istek gönder
+      const response = await fetch(formAction, {
+        method: 'POST',
+        body: formData,
+        mode: 'no-cors', // CORS sorunlarını önlemek için
+      });
+      
+      // Başarılı mesajı göster
+      setSuccessMessage("Your subscription has been successfully completed. Thank you for joining us!");
+      setEmail("");
+      setError("");
+      
+      // 5 saniye sonra başarı mesajını temizle
+      setTimeout(() => {
+        setSuccessMessage("");
+      }, 5000);
+    } catch (error) {
+      console.error('Subscription error:', error);
+      setError("Subscription failed. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  // Debounced fonksiyonu useCallback ile sarmalayarak her render'da yeniden oluşturulmasını önle
+  const handleChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setEmail(value);
 
@@ -36,9 +83,9 @@ export const Mailchimp: React.FC<React.ComponentProps<typeof Column>> = ({ ...fl
     } else {
       setError("");
     }
-  };
+  }, []);
 
-  const debouncedHandleChange = debounce(handleChange, 2000);
+  const debouncedHandleChange = useCallback(debounce(handleChange, 500), [handleChange]);
 
   const handleBlur = () => {
     setTouched(true);
@@ -118,17 +165,16 @@ export const Mailchimp: React.FC<React.ComponentProps<typeof Column>> = ({ ...fl
           display: "flex",
           justifyContent: "center",
         }}
-        action={mailchimp.action}
-        method="post"
+        onSubmit={handleSubmit}
         id="mc-embedded-subscribe-form"
         name="mc-embedded-subscribe-form"
       >
-        <Row
+        <Column
           id="mc_embed_signup_scroll"
           fillWidth
           maxWidth={24}
-          s={{ direction: "column" }}
           gap="8"
+          horizontal="center"
         >
           <Input
             formNoValidate
@@ -136,8 +182,13 @@ export const Mailchimp: React.FC<React.ComponentProps<typeof Column>> = ({ ...fl
             name="EMAIL"
             type="email"
             placeholder="Email"
+            value={email}
             required
             onChange={(e) => {
+              // Input değerini anında güncelle
+              setEmail(e.target.value);
+              
+              // Validasyon için debounce kullan
               if (error) {
                 handleChange(e);
               } else {
@@ -146,6 +197,7 @@ export const Mailchimp: React.FC<React.ComponentProps<typeof Column>> = ({ ...fl
             }}
             onBlur={handleBlur}
             errorMessage={error}
+            disabled={isSubmitting}
           />
           <div style={{ display: "none" }}>
             <input
@@ -172,12 +224,34 @@ export const Mailchimp: React.FC<React.ComponentProps<typeof Column>> = ({ ...fl
           </div>
           <div className="clear">
             <Row height="48" vertical="center">
-              <Button id="mc-embedded-subscribe" value="Subscribe" size="m" fillWidth>
-                Subscribe
+              <Button 
+                id="mc-embedded-subscribe" 
+                type="submit" 
+                size="l" 
+                fillWidth
+                disabled={isSubmitting || !validateEmail(email)}
+              >
+                {isSubmitting ? "Subscribing..." : "Subscribe"}
               </Button>
             </Row>
+            
           </div>
-        </Row>
+          
+          {/* Başarı mesajı */}
+          {successMessage && (
+            <Text 
+              variant="body-default-m" 
+              color="positive-default"
+              style={{ 
+                marginTop: "3px",
+                textAlign: "center",
+                fontWeight: "bold"
+              }}
+            >
+              {successMessage}
+            </Text>
+          )}
+        </Column>
       </form>
     </Column>
   );
