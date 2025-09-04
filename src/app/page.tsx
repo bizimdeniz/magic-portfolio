@@ -35,7 +35,7 @@ export default function Home() {
         path={home.path}
         title={home.title}
         description={home.description}
-        image={`https://www.denizco.de/images/og/home.jpg`}
+        image={`/api/og/generate?title=${encodeURIComponent(home.title)}`}
         author={{
           name: person.name,
           url: `${baseURL}${about.path}`,
