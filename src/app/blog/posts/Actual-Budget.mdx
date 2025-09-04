@@ -10,7 +10,7 @@ tag: "Raspberry Pi"
 
 ## Quick start
 
-Clone the git repository:
+Stop and delete the current container (this does not delete the data, it only removes the container):
 
 <CodeBlock compact marginBottom="16" codes={[
   {
@@ -21,7 +21,7 @@ docker rm actualbudget
   }
 ]} />
 
-Install the necessary dependencies:
+Take a new image:
 
 <CodeBlock compact marginBottom="16" codes={[
   {
@@ -30,7 +30,7 @@ Install the necessary dependencies:
   }
 ]} />
 
-Start the local development server:
+Restart using the same volume:
 
 <CodeBlock compact marginBottom="16" codes={[
   {
