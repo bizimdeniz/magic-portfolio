@@ -44,10 +44,15 @@ docker rm actualbudget`,
   {
     code:
 `docker run -d \
+
   --name actualbudget \
+
   -p 5006:5006 \
+
   -v /home/pi/actual-data:/data \
+
   actualbudget/actual-server:latest
+  
 `, 
     language: "tsx",
     label: "Restart using the same volume:"
