@@ -123,6 +123,7 @@ export default function About() {
                 radius="full"
                 padding="4"
                 gap="8"
+                marginTop="m"
                 marginBottom="m"
                 vertical="center"
                 className={styles.blockAlign}
