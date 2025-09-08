@@ -83,7 +83,7 @@ export default function About() {
             className={styles.avatar}
             position="sticky"
             top="64"
-            bottom="64"
+            marginBottom="8"
             s={{ position: "relative" }}
             minWidth="160"
             paddingX="l"
