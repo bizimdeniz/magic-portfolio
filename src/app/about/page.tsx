@@ -77,14 +77,15 @@ export default function About() {
           <TableOfContents structure={structure} about={about} />
         </Column>
       )}
-      <Row fillWidth s={{ direction: "column" }} horizontal="center">
+      <Row fillWidth s={{ direction: "column"}} horizontal="center">
         {about.avatar.display && (
           <Column
             className={styles.avatar}
-            position="sticky"
             top="64"
-            marginBottom="24"
-            s={{ position: "relative" }}
+            fitHeight
+            position="sticky"
+            s={{ position: "relative", style: { top: "auto" } }}
+            xs={{ style: { top: "auto" } }}
             minWidth="160"
             paddingX="l"
             paddingBottom="xl"
@@ -124,7 +125,6 @@ export default function About() {
                 radius="full"
                 padding="4"
                 gap="8"
-                marginTop="m"
                 marginBottom="m"
                 vertical="center"
                 className={styles.blockAlign}
