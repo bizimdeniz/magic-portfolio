@@ -78,7 +78,7 @@ const home: Home = {
   },
   subline: (
     <>
-      I&apos;m Harun, a test fulfilment associate at {" "}
+      I&apos;m Harun, a fulfilment associate at {" "}
       <Logo
         dark
         icon="/trademarks/Amazon_logo.svg"
