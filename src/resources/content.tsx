@@ -67,14 +67,14 @@ const home: Home = {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Glowy Joy</strong>{" "}
+        <strong className="ml-4">Pygma3D</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           New project
         </Text>
       </Row>
     ),
-    href: "https://glowyjoy.co.uk",
+    href: "https://pygma3d.com",
   },
   subline: (
     <>
