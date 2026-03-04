@@ -17,43 +17,43 @@ const person: Person = {
 
 const newsletter: Newsletter = {
   display: true,
-    title: <>Subscribe to {person.firstName}&apos;s Newsletter</>,
-    description: <>I occasionally write about web development, technology trends, and my experiences at the intersection of creativity and engineering.</>
+  title: <>Subscribe to {person.firstName}&apos;s Newsletter</>,
+  description: <>I occasionally write about web development, technology trends, and my experiences at the intersection of creativity and engineering.</>
 
 };
 
 const social: Social = [
 
-{
-        name: 'GitHub',
-        icon: 'github',
-        link: 'https://github.com/bizimdeniz',
-    },
-    {
-        name: 'LinkedIn',
-        icon: 'linkedin',
-        link: 'https://www.linkedin.com/in/harungeckaldi/',
-    },
-    {
-        name: 'X',
-        icon: 'x',
-        link: 'https://x.com/bizimdeniz_',
-    },
-    {
-        name: 'Kick',
-        icon: 'kick',
-        link: 'https://kick.com/bizimdeniz',
-    },
-    {
-        name: 'Bio',
-        icon: 'bio',
-        link: 'https://bio.denizco.de',
-    },
-    {
-        name: 'Email',
-        icon: 'email',
-        link: 'mailto:hello@denizco.de',
-    },
+  {
+    name: 'GitHub',
+    icon: 'github',
+    link: 'https://github.com/bizimdeniz',
+  },
+  {
+    name: 'LinkedIn',
+    icon: 'linkedin',
+    link: 'https://www.linkedin.com/in/harungeckaldi/',
+  },
+  {
+    name: 'X',
+    icon: 'x',
+    link: 'https://x.com/bizimdeniz_',
+  },
+  {
+    name: 'Kick',
+    icon: 'kick',
+    link: 'https://kick.com/bizimdeniz',
+  },
+  {
+    name: 'Bio',
+    icon: 'bio',
+    link: 'https://bio.denizco.de',
+  },
+  {
+    name: 'Email',
+    icon: 'email',
+    link: 'mailto:hello@denizco.de',
+  },
 ];
 
 const home: Home = {
@@ -78,13 +78,13 @@ const home: Home = {
   },
   subline: (
     <>
-      I&apos;m Harun, a fulfilment associate at {" "}
+      I&apos;m Harun, a test fulfilment associate at {" "}
       <Logo
         dark
         icon="/trademarks/Amazon_logo.svg"
-        style={{ display: "inline-flex", top: "0.45em", marginLeft: "0.25em"}}
+        style={{ display: "inline-flex", top: "0.45em", marginLeft: "0.25em" }}
       />
-         and a front-end developer at {" "}
+      and a front-end developer at {" "}
       <Logo
         dark
         icon="/trademarks/metadatasolutions.svg"
@@ -116,8 +116,8 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Harun is a Coventry-based Front-end Developer with a passion for transforming complex challenges into simple, 
-        elegant design solutions. His work spans digital interfaces, interactive experiences, 
+        Harun is a Coventry-based Front-end Developer with a passion for transforming complex challenges into simple,
+        elegant design solutions. His work spans digital interfaces, interactive experiences,
         and the convergence of design and technology.
       </>
     ),
@@ -127,152 +127,152 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-                company: 'Pygma3D',
-                timeframe: '2025 - Present',
-                role: 'Co-founder',
-                achievements: [
-                    <>We sell a variety of custom design 3D products in the Pygma3D Etsy store.<br />
-                    <a href="https://www.etsy.com/shop/Pygma3DStudio" target="_blank" rel="noopener noreferrer"> 
-                    Visit our Etsy shop
-                    </a></>,
-                    
-                ],
-                images: [ // optional: leave the array empty if you don't want to display images
-                    {
-                        src: '/images/cv/pygma3D-logo.svg',
-                        alt: 'Pygma3D',
-                        width: 16,
-                        height: 9
-                    }
-                ]
-            },
-            {
-                company: 'Amazon',
-                timeframe: '2024 - Present',
-                role: 'Fulfilment Associate',
-                achievements: [
-                    <>BHX4 at Amazon</>,
-                    
-                ],
-                images: [ // optional: leave the array empty if you don't want to display images
-                    {
-                        src: '/images/cv/amazon.jpg',
-                        alt: 'Amazon',
-                        width: 16,
-                        height: 9
-                    }
-                ]
-            },
-            {
-                company: 'Metadata Solutions',
-                timeframe: '2020 - Present',
-                role: 'Support Associate',
-                achievements: [
-                    <>I help as a freelancer in design and coding works for Metadata Solutions company.<br />
-                    <a href="https://www.metadatasolutions.co.uk" target="_blank" rel="noopener noreferrer"> 
-                    Visit Metadata Solutions
-                    </a>
-                    </>
-                    
-                ],
-                images: [ // optional: leave the array empty if you don't want to display images
-                    {
-                        src: '/images/cv/metadatas.jpg',
-                        alt: 'Once UI Project',
-                        width: 16,
-                        height: 9
-                    }
-                ]
-            },
-            {
-                company: 'Delta Hotels by Marriott',
-                timeframe: '2022 - 03.2025',
-                role: 'Receptionist',
-                achievements: [
-                    <>Night Supervisor</>,
-                    
-                ],
-                images: [ // optional: leave the array empty if you don't want to display images
-                    {
-                        src: '/images/cv/hotel.jpg',
-                        alt: 'Hotel',
-                        width: 16,
-                        height: 9
-                    }
-                ]
-            },
-      
+        company: 'Pygma3D',
+        timeframe: '2025 - Present',
+        role: 'Co-founder',
+        achievements: [
+          <>We sell a variety of custom design 3D products in the Pygma3D Etsy store.<br />
+            <a href="https://www.etsy.com/shop/Pygma3DStudio" target="_blank" rel="noopener noreferrer">
+              Visit our Etsy shop
+            </a></>,
+
+        ],
+        images: [ // optional: leave the array empty if you don't want to display images
+          {
+            src: '/images/cv/pygma3D-logo.svg',
+            alt: 'Pygma3D',
+            width: 16,
+            height: 9
+          }
+        ]
+      },
+      {
+        company: 'Amazon',
+        timeframe: '2024 - Present',
+        role: 'Fulfilment Associate',
+        achievements: [
+          <>BHX4 at Amazon</>,
+
+        ],
+        images: [ // optional: leave the array empty if you don't want to display images
+          {
+            src: '/images/cv/amazon.jpg',
+            alt: 'Amazon',
+            width: 16,
+            height: 9
+          }
+        ]
+      },
+      {
+        company: 'Metadata Solutions',
+        timeframe: '2020 - Present',
+        role: 'Support Associate',
+        achievements: [
+          <>I help as a freelancer in design and coding works for Metadata Solutions company.<br />
+            <a href="https://www.metadatasolutions.co.uk" target="_blank" rel="noopener noreferrer">
+              Visit Metadata Solutions
+            </a>
+          </>
+
+        ],
+        images: [ // optional: leave the array empty if you don't want to display images
+          {
+            src: '/images/cv/metadatas.jpg',
+            alt: 'Once UI Project',
+            width: 16,
+            height: 9
+          }
+        ]
+      },
+      {
+        company: 'Delta Hotels by Marriott',
+        timeframe: '2022 - 03.2025',
+        role: 'Receptionist',
+        achievements: [
+          <>Night Supervisor</>,
+
+        ],
+        images: [ // optional: leave the array empty if you don't want to display images
+          {
+            src: '/images/cv/hotel.jpg',
+            alt: 'Hotel',
+            width: 16,
+            height: 9
+          }
+        ]
+      },
+
     ],
   },
-   studies: {
-        display: true, // set to false to hide this section
-        title: 'Studies',
-        institutions: [
-            {
-                name: 'University of Anadolu',
-                description: <>Faculty of Business Administration.</>,
-            },
-            {
-                name: 'University of Suleyman Demirel',
-                description: <>Marketing and Advertising.</>,
-            }
+  studies: {
+    display: true, // set to false to hide this section
+    title: 'Studies',
+    institutions: [
+      {
+        name: 'University of Anadolu',
+        description: <>Faculty of Business Administration.</>,
+      },
+      {
+        name: 'University of Suleyman Demirel',
+        description: <>Marketing and Advertising.</>,
+      }
+    ]
+  },
+  technical: {
+    display: true, // set to false to hide this section
+    title: 'Technical skills',
+    skills: [
+      {
+        title: 'Technologies',
+        description: <>Technologies in my use</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: '/images/cv/html5.png',
+            alt: 'Project image',
+            width: 5,
+            height: 5
+          },
+          {
+            src: '/images/cv/css3.png',
+            alt: 'Project image',
+            width: 5,
+            height: 5
+          },
+          {
+            src: '/images/cv/vue.png',
+            alt: 'Project image',
+            width: 5,
+            height: 5
+          },
+          {
+            src: '/images/cv/node.png',
+            alt: 'Project image',
+            width: 5,
+            height: 5
+          },
+          {
+            src: '/images/cv/npm.png',
+            alt: 'Project image',
+            width: 5,
+            height: 5
+          },
+          {
+            src: '/images/cv/react.png',
+            alt: 'Project image',
+            width: 5,
+            height: 5
+
+          },
+          {
+            src: '/images/cv/wordpress.png',
+            alt: 'Project image',
+            width: 5,
+            height: 5
+          },
+
         ]
-    },
-    technical: {
-        display: true, // set to false to hide this section
-        title: 'Technical skills',
-        skills: [
-            {
-                title: 'Technologies',
-                description: <>Technologies in my use</>,
-                // optional: leave the array empty if you don't want to display images
-                images: [
-                    {
-                        src: '/images/cv/html5.png',
-                        alt: 'Project image',
-                        width: 5,
-                        height: 5
-                    },
-                    {
-                        src: '/images/cv/css3.png',
-                        alt: 'Project image',
-                        width: 5,
-                        height: 5
-                    },
-                    {
-                        src: '/images/cv/vue.png',
-                        alt: 'Project image',
-                        width: 5,
-                        height: 5
-                    },
-                    {
-                        src: '/images/cv/node.png',
-                        alt: 'Project image',
-                        width: 5,
-                        height: 5
-                    },
-                    {
-                        src: '/images/cv/npm.png',
-                        alt: 'Project image',
-                        width: 5,
-                        height: 5
-                    },
-                    {
-                        src: '/images/cv/react.png',
-                        alt: 'Project image',
-                        width: 5,
-                        height: 5
-                        
-                    },
-                    {
-                        src: '/images/cv/wordpress.png',
-                        alt: 'Project image',
-                        width: 5,
-                        height: 5
-                    },
-                    
-                ]
-            },
+      },
       {
         title: "Next.js",
         description: (
@@ -301,7 +301,7 @@ const about: About = {
             height: 9,
           },
         ],
-      },  
+      },
     ],
   },
 };
