@@ -127,20 +127,20 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-                company: 'GlowyJoy',
+                company: 'Pygma3D',
                 timeframe: '2025 - Present',
                 role: 'Co-founder',
                 achievements: [
-                    <>We sell a variety of beautiful jewellery products in the GlowyJoy Etsy store.<br />
-                    <a href="https://www.etsy.com/shop/GlowyJoy" target="_blank" rel="noopener noreferrer"> 
+                    <>We sell a variety of custom design 3D products in the Pygma3D Etsy store.<br />
+                    <a href="https://www.etsy.com/shop/Pygma3DStudio" target="_blank" rel="noopener noreferrer"> 
                     Visit our Etsy shop
                     </a></>,
                     
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
-                        src: '/images/cv/glow.png',
-                        alt: 'GlowyJoy',
+                        src: '/images/cv/pygma3D-logo.svg',
+                        alt: 'Pygma3D',
                         width: 16,
                         height: 9
                     }
