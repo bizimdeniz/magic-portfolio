@@ -9,7 +9,7 @@ const person: Person = {
   lastName: "Geckaldi",
   name: "Harun Geckaldi",
   role: "Front-end Developer",
-  avatar: '/images/avatar.JPG',
+  avatar: '/images/avatar.jpg',
   location: 'Europe/London',
   languages: ['English', 'Turkish'],
   email: "hello@denizco.de"
@@ -62,7 +62,7 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Front-end Developer and Designer</>,
+  headline: <>Front-end Developer</>,
   featured: {
     display: true,
     title: (
