@@ -139,7 +139,7 @@ const about: About = {
         ],
         images: [ // optional: leave the array empty if you don't want to display images
           {
-            src: '/images/cv/pygma3D-logo.svg',
+            src: '/images/cv/pygma3D-logo.png',
             alt: 'Pygma3D',
             width: 16,
             height: 9
